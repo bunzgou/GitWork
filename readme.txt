@@ -1,6 +1,10 @@
-introvertti - ekstrovertti
+﻿introvertti - ekstrovertti
 rauhallinen - maniac
 hyvä - paha
-valhetelija
+valehtelija
 jalo - ahne
 reasonable - väkivaltainen
+
+joku mitä toinen tekee
+tietyssä tilanteessa ottaa vallan
+haluaisi tasapainon omaan elämään
