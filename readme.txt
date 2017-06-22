@@ -1,4 +1,9 @@
-﻿introvertti - ekstrovertti
+﻿dallas kalevala ass of icon
+Paula DeAnda Walk Away (Remember Me)
+umav 22.6. mikä soi ennen pouch/bouch
+------------
+
+introvertti - ekstrovertti
 rauhallinen - maniac
 hyvä - paha
 valehtelija
