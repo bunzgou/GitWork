@@ -13,3 +13,6 @@ reasonable - väkivaltainen
 joku mitä toinen tekee
 tietyssä tilanteessa ottaa vallan
 haluaisi tasapainon omaan elämään
+
+Lastenvaunut ja -rattaat	8715001000
+Actionkamera	8525809900
