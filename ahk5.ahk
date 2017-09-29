@@ -14,7 +14,47 @@ erp_win_title := "Stormtech erp -joni"
 ; =A1 & "-" & C1
 
 ;====> TEST ZONE
-
+#MaxThreadsPerHotkey 2
+CapsLock::
+IfWinActive, Nimetön
+{
+	Toggle := !Toggle
+	loop
+		{
+		    If not Toggle
+		        break
+		    IfWinNotActive, Nimetön
+		    	break
+		    Send {w down}
+		    Sleep, 150
+		    Send {w up}
+		    If not Toggle
+		        break
+		    IfWinNotActive, Nimetön
+		    	break
+		    Send {a down}
+		    Sleep, 150
+		    Send {a up}
+		    If not Toggle
+		        break
+		    IfWinNotActive, Nimetön
+		    	break
+		    Send {s down}
+		    Sleep, 150
+		    Send {s up}
+		    If not Toggle
+		        break
+		    IfWinNotActive, Nimetön
+		    	break
+		    Send {d down}
+		    Sleep, 150
+		    Send {d up}
+		    
+		}
+	return
+}
+Else
+return
 
 ;====> SYÖTTÖLISTAN TIEDOT 3
 ^Xbutton1::
