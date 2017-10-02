@@ -14,37 +14,36 @@ erp_win_title := "Stormtech erp -joni"
 ; =A1 & "-" & C1
 
 ;====> TEST ZONE
-#MaxThreadsPerHotkey 2
-CapsLock::
-IfWinActive, Nimetön
+$CapsLock::
+IfWinActive, PLAYERUNKNOWN's BATTLEGROUNDS
 {
-	Toggle := !Toggle
+BreakLoop = 0	
 	loop
 		{
-		    If not Toggle
+		    If BreakLoop = 1
 		        break
-		    IfWinNotActive, Nimetön
+		    IfWinNotActive, PLAYERUNKNOWN's BATTLEGROUNDS
 		    	break
 		    Send {w down}
 		    Sleep, 150
 		    Send {w up}
-		    If not Toggle
+		    If BreakLoop = 1
 		        break
-		    IfWinNotActive, Nimetön
+		    IfWinNotActive, PLAYERUNKNOWN's BATTLEGROUNDS
 		    	break
 		    Send {a down}
 		    Sleep, 150
 		    Send {a up}
-		    If not Toggle
+		    If BreakLoop = 1
 		        break
-		    IfWinNotActive, Nimetön
+		    IfWinNotActive, PLAYERUNKNOWN's BATTLEGROUNDS
 		    	break
 		    Send {s down}
 		    Sleep, 150
 		    Send {s up}
-		    If not Toggle
+		    If BreakLoop = 1
 		        break
-		    IfWinNotActive, Nimetön
+		    IfWinNotActive, PLAYERUNKNOWN's BATTLEGROUNDS
 		    	break
 		    Send {d down}
 		    Sleep, 150
@@ -54,7 +53,33 @@ IfWinActive, Nimetön
 	return
 }
 Else
+SetCapsLockState, % (State:=!State) ? "On" : "Off"
 return
+
+$tab::
+Send {tab}
+BreakLoop = 1
+Return
+
+$w::
+Send {w}
+BreakLoop = 1
+Return
+
+$a::
+Send {a}
+BreakLoop = 1
+Return
+
+$s::
+Send {s}
+BreakLoop = 1
+Return
+
+$d::
+Send {d}
+BreakLoop = 1
+Return
 
 ;====> SYÖTTÖLISTAN TIEDOT 3
 ^Xbutton1::
